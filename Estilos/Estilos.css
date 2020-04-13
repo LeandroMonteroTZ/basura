@@ -68,7 +68,7 @@ h2 {
     /* filter: hue-rotate(180deg); */
     /* filter: saturate(.2); */
     /* filter: sepia(.2); */
-}
+/* } */
 .polaroid img:hover {
     /* opacity: 1; */
     filter: sepia(1);
