@@ -1,0 +1,155 @@
+body {
+    font-size: 100%;
+    margin: 0;
+    background-color: #eee;
+}
+h1 {
+    background-color: hsla(18,100%,50%,.5);
+    border: double #eee 10px;
+    border-radius: 25px;
+    font-family: 'Girassol', cursiva;
+    font-style: italic;
+    font-size: 1em; /* 40px/16=*/
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+h2 {
+    margin: 5px;
+}
+.container p {
+    border: red solid 1px;
+}
+.cat {
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+}
+.perro {
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+.conejo {
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+}
+.responsive {
+    height: auto;
+    max-width: 100%;
+
+}
+.title {
+    width: 50px;
+    margin: auto;
+}
+.container {
+    position: relative;
+    height: 100px;
+    margin: 0;
+}
+/* .thumb {
+    margin: 10px;
+    border: 5px solid #ddd;
+    width: 150px;
+}
+.thumb:hover {
+    width: 300px;
+    box-shadow: 0 0 2px 1px rgba(0,140,186,.8)
+
+} */
+.polaroid img {
+    /* opacity: .4 ; */
+    /* filter: contrast(1.5); */
+    /* filter: grayscale(1.5); */
+    /* filter: brightness(1.5); */
+    /* filter: hue-rotate(180deg); */
+    /* filter: saturate(.2); */
+    /* filter: sepia(.2); */
+}
+.polaroid img:hover {
+    /* opacity: 1; */
+    filter: sepia(1);
+    cursor: pointer;
+    
+}
+div.polaroid {
+    position: relative;
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    display: block;
+    transition: width 2s, transform .3s;
+    transition-delay: .3s;
+    animation: roll 4s infinite alternate;
+    /* animation: skew 4s infinite alternate; */
+    /* animation-name: skew;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 2s;
+    animation-timing-function:ease-in-out;
+     */
+}
+/* div.polaroid:hover {
+    transform: rotate(180deg);
+    transform: scale(1.5, 1.5);
+    transform: skew(-20deg);
+} */
+/* @keyframes skew {
+    0%{transform: skewX(20deg)};
+    100%{transform: skewY(-20deg)}; */
+@keyframes roll {
+    0% {
+        transform: (0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.texto {
+    text-align: center;
+    font-family: 'Girassol';
+
+}
+.imgtext {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+/* .cubo {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    transition: width 2s, height 2s, transform;
+}
+div.cubo:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+} */
+@media screen and (max-width: 480px) {/*iphone 4 */
+    body {
+        background-color: red;;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 760px) {/* tablets */    
+    body {
+        background-color: green;
+    }
+}
+@media screen and (min-width: 761px) {
+    body {
+        background: gray;
+    }
+    div.polaroid {
+        display: inline-block;
+        margin-left: 10%;
+    }
+}
